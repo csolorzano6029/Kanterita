@@ -1,7 +1,6 @@
 package com.canterita.challenge.backend.test.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 
 @AllArgsConstructor
 @Data
