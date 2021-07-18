@@ -2,7 +2,6 @@ package com.canterita.challenge.backend.test.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,22 +31,13 @@ public class OrderController {
 	}
 
 	@GetMapping()
-	public ArrayList<OrderEntity>showOrders(){
+	public ArrayList<OrderEntity>showOrders() {
 		return orderService.showOrders();
 	}
 
 	@PostMapping()
-	public OrderEntity saveOrder(@RequestBody OrderEntity order){
-		return this.orderService.saveOrder(order);
+	public OrderEntity saveAOrder(@RequestBody OrderEntity order) {
+		return this.orderService.saveAOrder(order);
 	}
 
-	@DeleteMapping(value = "/{id}")
-	public String delete(@PathVariable("id") Long id){
-		boolean ok = this.orderService.delete(id);
-		if (ok){
-			return "Orden con id "+id+" eliminada";
-		}else {
-			return "No se pudo eliminar la orden con id "+id;
-		}
-	}
 }

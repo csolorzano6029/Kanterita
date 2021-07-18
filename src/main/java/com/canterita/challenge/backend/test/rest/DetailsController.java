@@ -6,7 +6,6 @@ import com.canterita.challenge.backend.test.model.DetailsEntity;
 import com.canterita.challenge.backend.test.service.IDetailsService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,31 +20,23 @@ import org.springframework.http.HttpStatus;
 public class DetailsController {
     
     @Autowired
-	private IDetailsService orderDetailsService;
+	private IDetailsService detailsService;
 
     @GetMapping(value = "/{idOrder}/details")
 	@ResponseStatus(HttpStatus.OK)
-	public ArrayList<DetailsEntity> getByIdOrder(@PathVariable("idOrder") Long id){
-		return this.orderDetailsService.getByIdOrder(id);
+	public ArrayList<DetailsEntity> orderId(@PathVariable("idOrder") Long id) {
+		return this.detailsService.orderId(id);
 	}
 
 	@GetMapping(value = "/details")
-	public ArrayList<DetailsEntity>showDetails(){
-		return orderDetailsService.showDetails();
+	public ArrayList<DetailsEntity>showDetails() {
+		return detailsService.showDetails();
 	}
 
 	@PostMapping(value = "/{id}/details")
-	public DetailsEntity saveDetails(@RequestBody OrderDetailsDto order, @PathVariable("id") Long id){
-		return this.orderDetailsService.saveDetails(order,id);
+	public DetailsEntity saveInformationDetails(@RequestBody OrderDetailsDto order, @PathVariable("id") Long id){
+		return this.detailsService.saveInformationDetails(order,id);
 	}
-	@DeleteMapping(value = "/{id}/details")
-	public String delete(@PathVariable("id") Long id){
-		boolean ok = this.orderDetailsService.delete(id);
-		if (ok){
-			return "Detalle con id "+id+" eliminado";
-		}else {
-			return "No se pudo eliminar la orden con id "+id;
-		}
-	}
+	
 
 }
