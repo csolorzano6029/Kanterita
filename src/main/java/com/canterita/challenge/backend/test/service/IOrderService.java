@@ -9,8 +9,6 @@ import com.canterita.challenge.backend.test.model.OrderEntity;
 public interface IOrderService {
 	
 	public OrderDto getOrder(Long id);
-	public OrderEntity saveOrder(OrderEntity order);
-	public boolean delete(Long id);
+	public OrderEntity saveAOrder(OrderEntity order);
 	public ArrayList<OrderEntity> showOrders();
-
 }

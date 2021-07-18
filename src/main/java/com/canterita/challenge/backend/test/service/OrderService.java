@@ -1,6 +1,5 @@
 package com.canterita.challenge.backend.test.service;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
@@ -10,7 +9,7 @@ import com.canterita.challenge.backend.test.model.OrderEntity;
 import com.canterita.challenge.backend.test.repository.OrderRepository;
 
 @Service
-public class OrderService implements IOrderService{
+public class OrderService implements IOrderService {
 	
 	@Autowired
 	private OrderRepository orderRepository;
@@ -22,18 +21,8 @@ public class OrderService implements IOrderService{
 				.orElse(null);
 	}
 
-	public OrderEntity saveOrder(OrderEntity order){
+	public OrderEntity saveAOrder(OrderEntity order) {
 		return orderRepository.save(order);
-	}
-
-	public boolean delete(Long id){
-		try{
-		orderRepository.deleteById(id);
-		return true;
-
-		}catch(Exception err){
-			return false;
-		}
 	}
 
 	public ArrayList<OrderEntity>showOrders(){

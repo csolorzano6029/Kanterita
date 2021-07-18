@@ -9,42 +9,33 @@ import com.canterita.challenge.backend.test.model.DetailsEntity;
 import com.canterita.challenge.backend.test.repository.DetailsRepositoryEntity;
 
 @Service
-public class DetailsService implements IDetailsService{
+public class DetailsService implements IDetailsService {
     @Autowired
-	public DetailsRepositoryEntity orderDetailsRepository;
-	public DetailsEntity orderDetailsEntity;
+	public DetailsRepositoryEntity repositoryDetails;
+	public DetailsEntity detailsEntity;
     @Override
-	public OrderDetailsDto getOrderDetails(Long idOrder) {
-		return orderDetailsRepository.findById(idOrder)
-				.map(orderDetail -> new OrderDetailsDto(orderDetail.getId(), orderDetail.getIdOrder(), orderDetail.getDetail(), orderDetail.getAmount(), orderDetail.getUnitPrice(),orderDetail.getTotalDetail()))
+	public OrderDetailsDto extractOrderDetails(Long idOrder) {
+		return repositoryDetails.findById(idOrder)
+				.map(details -> new OrderDetailsDto(details.getId(), details.getIdOrder(), details.getDetail(), details.getAmount(), details.getUnitPrice(),details.getTotalDetail()))
 				.orElse(null);
 	}
 
-	public DetailsEntity saveDetails(OrderDetailsDto orderDetail, Long id){
-		orderDetailsEntity = new DetailsEntity();
+	public DetailsEntity saveInformationDetails(OrderDetailsDto details, Long id) {
+		detailsEntity = new DetailsEntity();
                
-		orderDetailsEntity.setIdOrder(id);
-		orderDetailsEntity.setDetail(orderDetail.getDetail());
-		orderDetailsEntity.setAmount(orderDetail.getAmount());
-		orderDetailsEntity.setUnitPrice(orderDetail.getUnitPrice());
-		orderDetailsEntity.setTotalDetail(orderDetail.getTotalDetail());
-		return orderDetailsRepository.save(orderDetailsEntity);
+		detailsEntity.setIdOrder(id);
+		detailsEntity.setDetail(details.getDetail());
+		detailsEntity.setAmount(details.getAmount());
+		detailsEntity.setUnitPrice(details.getUnitPrice());
+		detailsEntity.setTotalDetail(details.getTotalDetail());
+		return repositoryDetails.save(detailsEntity);
 	}
-	public ArrayList<DetailsEntity>showDetails(){
-		return (ArrayList<DetailsEntity>) orderDetailsRepository.findAll();
-	}
-
-	public ArrayList<DetailsEntity> getByIdOrder(Long id){
-		return orderDetailsRepository.findByidOrder(id);
+	public ArrayList<DetailsEntity>showDetails() {
+		return (ArrayList<DetailsEntity>) repositoryDetails.findAll();
 	}
 
-	public boolean delete(Long id){
-		try{
-			orderDetailsRepository.deleteById(id);
-		return true;
-
-		}catch(Exception err){
-			return false;
-		}
+	public ArrayList<DetailsEntity> orderId(Long id) {
+		return repositoryDetails.findByidOrder(id);
 	}
+
 }
