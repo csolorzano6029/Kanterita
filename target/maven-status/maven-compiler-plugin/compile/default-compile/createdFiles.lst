@@ -1,0 +1,13 @@
+com\canterita\challenge\backend\test\dto\OrderDto.class
+com\canterita\challenge\backend\test\model\OrderEntity.class
+com\canterita\challenge\backend\test\rest\OrderController.class
+com\canterita\challenge\backend\test\dto\OrderDetailsDto.class
+com\canterita\challenge\backend\test\service\IOrderService.class
+com\canterita\challenge\backend\test\model\DetailsEntity.class
+com\canterita\challenge\backend\test\service\IDetailsService.class
+com\canterita\challenge\backend\test\service\OrderService.class
+com\canterita\challenge\backend\test\service\DetailsService.class
+com\canterita\challenge\backend\test\repository\DetailsRepositoryEntity.class
+com\canterita\challenge\backend\test\RestaurantApplication.class
+com\canterita\challenge\backend\test\rest\DetailsController.class
+com\canterita\challenge\backend\test\repository\OrderRepository.class
