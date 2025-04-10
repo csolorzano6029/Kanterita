@@ -1,0 +1,8 @@
+com\canterita\challenge\backend\test\model\DetailsEntityTest.class
+com\canterita\challenge\backend\test\rest\DetailsControllerTest.class
+com\canterita\challenge\backend\test\model\OrderEntityTest.class
+com\canterita\challenge\backend\test\repository\DetailsRepositoryEntityTest$DetailsRepositoryEntityImpl.class
+com\canterita\challenge\backend\test\dto\OrderDetailsDtoTest.class
+com\canterita\challenge\backend\test\service\DetailsServiceTest.class
+com\canterita\challenge\backend\test\dto\OrderDtoTest.class
+com\canterita\challenge\backend\test\repository\DetailsRepositoryEntityTest.class

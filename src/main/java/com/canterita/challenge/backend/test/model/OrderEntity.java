@@ -1,28 +1,42 @@
 package com.canterita.challenge.backend.test.model;
 
-import java.time.LocalDateTime;
-import javax.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Data
 @Entity()
-@Table(name = "ORDER_ENTITY")
+@Table(name = "orders")
 public class OrderEntity {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	
-	@Column(name = "number")
-	private String number;
-	
-	@Column(name = "client")
-	private String client;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-	@Column(name = "total")
-	private Double total;
-	
-	@Column(name = "date_order")
-	private LocalDateTime dateOrder;
+    @Column(name = "number")
+    private String number;
+
+    @Column(name = "client")
+    private String client;
+
+    @Column(name = "total")
+    private Double total;
+
+    @Column(name = "date_order")
+    private LocalDateTime dateOrder;
+
+    @Column(name = "status")
+    private String status;
+
+    @CreationTimestamp
+    @Column(name = "create_date")
+    private LocalDateTime createDate;
+
+    @UpdateTimestamp
+    @Column(name = "update_date")
+    private LocalDateTime updateDate;
 
 }

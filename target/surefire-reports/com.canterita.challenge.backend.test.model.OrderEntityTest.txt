@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.canterita.challenge.backend.test.model.OrderEntityTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 14, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.canterita.challenge.backend.test.model.OrderEntityTest
+testSetDateOrder  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testSetDateOrder(OrderEntityTest.java:173)
+
+testGetTotal  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testGetTotal(OrderEntityTest.java:94)
+
+testGetId  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testGetId(OrderEntityTest.java:52)
+
+testSetId  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testSetId(OrderEntityTest.java:121)
+
+testToString  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[OrderEntity(id=null, number=null, client=null, total=null, dateOrder=null, status=null, createDate=null, updateDate=null)]>
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testToString(OrderEntityTest.java:229)
+
+testCanEqual  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testCanEqual(OrderEntityTest.java:203)
+
+testGetDateOrder  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testGetDateOrder(OrderEntityTest.java:108)
+
+testSetClient  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testSetClient(OrderEntityTest.java:147)
+
+testHashCode  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<-506892431>
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testHashCode(OrderEntityTest.java:215)
+
+testGetClient  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<> but was:<null>
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testGetClient(OrderEntityTest.java:78)
+
+testSetNumber  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testSetNumber(OrderEntityTest.java:134)
+
+testEquals  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testEquals(OrderEntityTest.java:188)
+
+testGetNumber  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<> but was:<null>
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testGetNumber(OrderEntityTest.java:64)
+
+testSetTotal  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.OrderEntityTest.testSetTotal(OrderEntityTest.java:160)
+

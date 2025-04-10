@@ -6,36 +6,34 @@
 package com.canterita.challenge.backend.test.rest;
 
 import com.canterita.challenge.backend.test.dto.OrderDetailsDto;
-import com.canterita.challenge.backend.test.model.DetailsEntity;
+import com.canterita.challenge.backend.test.model.OrderDetailsEntity;
+import org.junit.*;
+
 import java.util.ArrayList;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 /**
- *
  * @author TheLegends
  */
 public class DetailsControllerTest {
-    
+
     public DetailsControllerTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -47,9 +45,9 @@ public class DetailsControllerTest {
     public void testOrderId() {
         System.out.println("orderId");
         Long id = null;
-        DetailsController instance = new DetailsController();
-        ArrayList<DetailsEntity> expResult = null;
-        ArrayList<DetailsEntity> result = instance.orderId(id);
+        OrderDetailsController instance = new OrderDetailsController();
+        ArrayList<OrderDetailsEntity> expResult = null;
+        ArrayList<OrderDetailsEntity> result = instance.orderId(id);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -61,9 +59,9 @@ public class DetailsControllerTest {
     @Test
     public void testShowDetails() {
         System.out.println("showDetails");
-        DetailsController instance = new DetailsController();
-        ArrayList<DetailsEntity> expResult = null;
-        ArrayList<DetailsEntity> result = instance.showDetails();
+        OrderDetailsController instance = new OrderDetailsController();
+        ArrayList<OrderDetailsEntity> expResult = null;
+        ArrayList<OrderDetailsEntity> result = instance.showDetails();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -77,12 +75,12 @@ public class DetailsControllerTest {
         System.out.println("saveInformationDetails");
         OrderDetailsDto order = null;
         Long id = null;
-        DetailsController instance = new DetailsController();
-        DetailsEntity expResult = null;
-        DetailsEntity result = instance.saveInformationDetails(order, id);
+        OrderDetailsController instance = new OrderDetailsController();
+        OrderDetailsEntity expResult = null;
+        OrderDetailsEntity result = instance.saveInformationDetails(order, id);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+
 }

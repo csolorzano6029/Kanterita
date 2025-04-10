@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.canterita.challenge.backend.test.rest.DetailsControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.canterita.challenge.backend.test.rest.DetailsControllerTest
+testOrderId  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.rest.DetailsControllerTest.testOrderId(DetailsControllerTest.java:52)
+
+testSaveInformationDetails  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.rest.DetailsControllerTest.testSaveInformationDetails(DetailsControllerTest.java:82)
+
+testShowDetails  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.rest.DetailsControllerTest.testShowDetails(DetailsControllerTest.java:66)
+

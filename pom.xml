@@ -58,10 +58,10 @@
             <scope>provided</scope>
 	    </dependency>
         <dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>42.7.2</scope>
+        </dependency>
     </dependencies>
 
     <build>

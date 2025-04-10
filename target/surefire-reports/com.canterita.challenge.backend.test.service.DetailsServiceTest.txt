@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.canterita.challenge.backend.test.service.DetailsServiceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.canterita.challenge.backend.test.service.DetailsServiceTest
+testOrderId  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.service.DetailsServiceTest.testOrderId(DetailsServiceTest.java:97)
+
+testExtractOrderDetails  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.service.DetailsServiceTest.testExtractOrderDetails(DetailsServiceTest.java:52)
+
+testSaveInformationDetails  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.service.DetailsServiceTest.testSaveInformationDetails(DetailsServiceTest.java:68)
+
+testShowDetails  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.service.DetailsServiceTest.testShowDetails(DetailsServiceTest.java:82)
+

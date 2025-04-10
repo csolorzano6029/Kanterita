@@ -6,36 +6,34 @@
 package com.canterita.challenge.backend.test.service;
 
 import com.canterita.challenge.backend.test.dto.OrderDetailsDto;
-import com.canterita.challenge.backend.test.model.DetailsEntity;
+import com.canterita.challenge.backend.test.model.OrderDetailsEntity;
+import org.junit.*;
+
 import java.util.ArrayList;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 /**
- *
  * @author TheLegends
  */
 public class DetailsServiceTest {
-    
+
     public DetailsServiceTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -47,7 +45,7 @@ public class DetailsServiceTest {
     public void testExtractOrderDetails() {
         System.out.println("extractOrderDetails");
         Long idOrder = null;
-        DetailsService instance = new DetailsService();
+        OrderDetailsService instance = new OrderDetailsService();
         OrderDetailsDto expResult = null;
         OrderDetailsDto result = instance.extractOrderDetails(idOrder);
         assertEquals(expResult, result);
@@ -63,9 +61,9 @@ public class DetailsServiceTest {
         System.out.println("saveInformationDetails");
         OrderDetailsDto details = null;
         Long id = null;
-        DetailsService instance = new DetailsService();
-        DetailsEntity expResult = null;
-        DetailsEntity result = instance.saveInformationDetails(details, id);
+        OrderDetailsService instance = new OrderDetailsService();
+        OrderDetailsEntity expResult = null;
+        OrderDetailsEntity result = instance.saveInformationDetails(details, id);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -77,9 +75,9 @@ public class DetailsServiceTest {
     @Test
     public void testShowDetails() {
         System.out.println("showDetails");
-        DetailsService instance = new DetailsService();
-        ArrayList<DetailsEntity> expResult = null;
-        ArrayList<DetailsEntity> result = instance.showDetails();
+        OrderDetailsService instance = new OrderDetailsService();
+        ArrayList<OrderDetailsEntity> expResult = null;
+        ArrayList<OrderDetailsEntity> result = instance.showDetails();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -92,12 +90,12 @@ public class DetailsServiceTest {
     public void testOrderId() {
         System.out.println("orderId");
         Long id = null;
-        DetailsService instance = new DetailsService();
-        ArrayList<DetailsEntity> expResult = null;
-        ArrayList<DetailsEntity> result = instance.orderId(id);
+        OrderDetailsService instance = new OrderDetailsService();
+        ArrayList<OrderDetailsEntity> expResult = null;
+        ArrayList<OrderDetailsEntity> result = instance.orderId(id);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+
 }

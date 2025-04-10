@@ -1,0 +1,11 @@
+spring.datasource.url=jdbc:postgresql://localhost:5433/restaurant
+spring.datasource.username=postgres
+spring.datasource.password=123456
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+# Port of server (optional)
+server.port=3000
+# context
+server.servlet.context-path=/kanterita/api/v1
+

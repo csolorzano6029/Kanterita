@@ -5,34 +5,31 @@
  */
 package com.canterita.challenge.backend.test.model;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.*;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 /**
- *
  * @author TheLegends
  */
 public class DetailsEntityTest {
-    
+
     public DetailsEntityTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -43,7 +40,7 @@ public class DetailsEntityTest {
     @Test
     public void testGetId() {
         System.out.println("getId");
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         Long expResult = null;
         Long result = instance.getId();
         assertEquals(expResult, result);
@@ -57,7 +54,7 @@ public class DetailsEntityTest {
     @Test
     public void testGetIdOrder() {
         System.out.println("getIdOrder");
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         Long expResult = null;
         Long result = instance.getIdOrder();
         assertEquals(expResult, result);
@@ -71,7 +68,7 @@ public class DetailsEntityTest {
     @Test
     public void testGetDetail() {
         System.out.println("getDetail");
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         String expResult = "";
         String result = instance.getDetail();
         assertEquals(expResult, result);
@@ -85,7 +82,7 @@ public class DetailsEntityTest {
     @Test
     public void testGetAmount() {
         System.out.println("getAmount");
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         Double expResult = null;
         Double result = instance.getAmount();
         assertEquals(expResult, result);
@@ -99,7 +96,7 @@ public class DetailsEntityTest {
     @Test
     public void testGetUnitPrice() {
         System.out.println("getUnitPrice");
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         Double expResult = null;
         Double result = instance.getUnitPrice();
         assertEquals(expResult, result);
@@ -113,7 +110,7 @@ public class DetailsEntityTest {
     @Test
     public void testGetTotalDetail() {
         System.out.println("getTotalDetail");
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         Double expResult = null;
         Double result = instance.getTotalDetail();
         assertEquals(expResult, result);
@@ -128,7 +125,7 @@ public class DetailsEntityTest {
     public void testEquals() {
         System.out.println("equals");
         Object o = null;
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         boolean expResult = false;
         boolean result = instance.equals(o);
         assertEquals(expResult, result);
@@ -143,7 +140,7 @@ public class DetailsEntityTest {
     public void testCanEqual() {
         System.out.println("canEqual");
         Object other = null;
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         boolean expResult = false;
         boolean result = instance.canEqual(other);
         assertEquals(expResult, result);
@@ -157,7 +154,7 @@ public class DetailsEntityTest {
     @Test
     public void testHashCode() {
         System.out.println("hashCode");
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         int expResult = 0;
         int result = instance.hashCode();
         assertEquals(expResult, result);
@@ -171,7 +168,7 @@ public class DetailsEntityTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
@@ -186,7 +183,7 @@ public class DetailsEntityTest {
     public void testSetId() {
         System.out.println("setId");
         Long id = null;
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         instance.setId(id);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -199,7 +196,7 @@ public class DetailsEntityTest {
     public void testSetIdOrder() {
         System.out.println("setIdOrder");
         Long idOrder = null;
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         instance.setIdOrder(idOrder);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -212,7 +209,7 @@ public class DetailsEntityTest {
     public void testSetDetail() {
         System.out.println("setDetail");
         String detail = "";
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         instance.setDetail(detail);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -225,7 +222,7 @@ public class DetailsEntityTest {
     public void testSetAmount() {
         System.out.println("setAmount");
         Double amount = null;
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         instance.setAmount(amount);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -238,7 +235,7 @@ public class DetailsEntityTest {
     public void testSetUnitPrice() {
         System.out.println("setUnitPrice");
         Double unitPrice = null;
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         instance.setUnitPrice(unitPrice);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -251,10 +248,10 @@ public class DetailsEntityTest {
     public void testSetTotalDetail() {
         System.out.println("setTotalDetail");
         Double totalDetail = null;
-        DetailsEntity instance = new DetailsEntity();
+        OrderDetailsEntity instance = new OrderDetailsEntity();
         instance.setTotalDetail(totalDetail);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+
 }

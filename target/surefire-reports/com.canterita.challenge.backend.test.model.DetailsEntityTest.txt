@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: com.canterita.challenge.backend.test.model.DetailsEntityTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 16, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.canterita.challenge.backend.test.model.DetailsEntityTest
+testGetId  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testGetId(DetailsEntityTest.java:51)
+
+testSetId  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testSetId(DetailsEntityTest.java:192)
+
+testToString  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[DetailsEntity(id=null, idOrder=null, detail=null, amount=null, unitPrice=null, totalDetail=null, status=null, createDate=null, updateDate=null)]>
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testToString(DetailsEntityTest.java:177)
+
+testSetTotalDetail  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testSetTotalDetail(DetailsEntityTest.java:257)
+
+testSetIdOrder  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testSetIdOrder(DetailsEntityTest.java:205)
+
+testGetUnitPrice  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testGetUnitPrice(DetailsEntityTest.java:107)
+
+testCanEqual  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testCanEqual(DetailsEntityTest.java:151)
+
+testSetAmount  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testSetAmount(DetailsEntityTest.java:231)
+
+testSetDetail  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testSetDetail(DetailsEntityTest.java:218)
+
+testHashCode  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<158117686>
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testHashCode(DetailsEntityTest.java:163)
+
+testGetAmount  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testGetAmount(DetailsEntityTest.java:93)
+
+testGetDetail  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<> but was:<null>
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testGetDetail(DetailsEntityTest.java:77)
+
+testGetTotalDetail  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testGetTotalDetail(DetailsEntityTest.java:121)
+
+testEquals  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testEquals(DetailsEntityTest.java:136)
+
+testGetIdOrder  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testGetIdOrder(DetailsEntityTest.java:65)
+
+testSetUnitPrice  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.model.DetailsEntityTest.testSetUnitPrice(DetailsEntityTest.java:244)
+

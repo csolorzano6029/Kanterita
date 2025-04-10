@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.canterita.challenge.backend.test.repository.DetailsRepositoryEntityTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.canterita.challenge.backend.test.repository.DetailsRepositoryEntityTest
+testSave  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.repository.DetailsRepositoryEntityTest.testSave(DetailsRepositoryEntityTest.java:73)
+
+testFindByidOrder  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at com.canterita.challenge.backend.test.repository.DetailsRepositoryEntityTest.testFindByidOrder(DetailsRepositoryEntityTest.java:60)
+

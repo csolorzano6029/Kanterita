@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest
+testGetId  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testGetId(OrderDetailsDtoTest.java:38)
+
+testSetId  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testSetId(OrderDetailsDtoTest.java:122)
+
+testToString  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testToString(OrderDetailsDtoTest.java:244)
+
+testSetTotalDetail  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testSetTotalDetail(OrderDetailsDtoTest.java:187)
+
+testSetIdOrder  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testSetIdOrder(OrderDetailsDtoTest.java:135)
+
+testGetUnitPrice  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testGetUnitPrice(OrderDetailsDtoTest.java:94)
+
+testCanEqual  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testCanEqual(OrderDetailsDtoTest.java:216)
+
+testSetAmount  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testSetAmount(OrderDetailsDtoTest.java:161)
+
+testSetDetail  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testSetDetail(OrderDetailsDtoTest.java:148)
+
+testHashCode  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testHashCode(OrderDetailsDtoTest.java:230)
+
+testGetAmount  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testGetAmount(OrderDetailsDtoTest.java:80)
+
+testGetDetail  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testGetDetail(OrderDetailsDtoTest.java:66)
+
+testGetTotalDetail  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testGetTotalDetail(OrderDetailsDtoTest.java:108)
+
+testEquals  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testEquals(OrderDetailsDtoTest.java:201)
+
+testGetIdOrder  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testGetIdOrder(OrderDetailsDtoTest.java:52)
+
+testSetUnitPrice  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.canterita.challenge.backend.test.dto.OrderDetailsDtoTest.testSetUnitPrice(OrderDetailsDtoTest.java:174)
+
