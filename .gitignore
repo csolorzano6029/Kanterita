@@ -1,0 +1,47 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+*.project
+*.classpath
+*.settings/
+
+# Gradle
+.gradle/
+build/
+
+# Maven
+target/
+
+# Spring Boot
+*.log
+*.class
+*.jar
+*.war
+*.ear
+*.tar.gz
+*.zip
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.out
+
+# Local configuration
+application.properties
+application.yml
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# IntelliJ & VS Code
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
